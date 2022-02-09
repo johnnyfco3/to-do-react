@@ -1,0 +1,42 @@
+let name: string;
+let age: number | string;
+let isStudent: boolean;
+let some: string[];
+
+type Person ={
+  name: string,
+  age?: number
+}
+let person: Person = {
+  name: "JT",
+  age: 9
+} 
+
+let printName: (name:string) => void;   eturn undefined
+let printName1: (name:string) => never;  eturns nothing
+let lotsPeople: Person[];
+let name1 : any;
+let personName: unknown;
+
+interface Person1 extends X{                  
+  name: string,
+  age?: number
+}
+interface Guy extends Person{                  ow it also has name and age
+  occupation: string
+}
+
+type X = Person & {
+  a: string,
+  b: number
+}
+
+ type Y = X & {
+   c: string,
+   d: number
+ }
+
+ let y: Y = {                issing a and b because of X
+   c: "efrfff",
+   d: 42
+ }
